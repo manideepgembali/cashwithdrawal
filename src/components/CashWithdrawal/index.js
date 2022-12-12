@@ -33,7 +33,7 @@ class CashWithdrawal extends Component {
             {denominationsList.map(eachItem => (
               <DenominationItem
                 userDetails={eachItem}
-                onClick={this.decreaseAmount}
+                decreaseAmount={this.decreaseAmount}
                 key={eachItem.id}
               />
             ))}
